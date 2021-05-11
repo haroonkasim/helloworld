@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Arithmetic_Demo {
+public class Calc {
 	
 	public static void main(String[] args)
 	{
