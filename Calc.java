@@ -15,13 +15,7 @@ public class Calc {
 		int div1 = 10%5;
 		System.out.println("div1 = "+ div1);
 		
-		float a = 0.0f/0.0f;
+		float a = 0.0;
 		System.out.println("a = "+ a);
-		
-		System.out.println(10/0.0);
-		System.out.println(-10/0.0);
-		
-
 	}
-
 }
