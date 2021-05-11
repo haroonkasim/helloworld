@@ -1,68 +1,27 @@
-import java.util.Scanner;
 
 public class Calc {
 	
 	public static void main(String[] args)
 	{
-		Scanner s = new Scanner(System.in);
-		int n1,n2;
-		int ans = 1, c = 0;
-		char choice;
+		int no = 10;
+		System.out.println("no = " + no);
+		int x = no++; // Frst Assign then increment
+		System.out.println("x = " + x + " no = " + no);
+		int y = ++no; // Frst Increment then Assign
+		System.out.println("y = " + y + " no = " + no);
 		
-		do
-		{
-			System.out.println("a.Addition\tb. Substraction\nc. Multiplication\td. Division\te. Stop");
-			System.out.println("Enter Your Choice : ");
-			choice = s.next().charAt(0);
-			switch(choice)
-			{
-				case 'a' :
-					System.out.println("Enter The Numbers : ");
-					n1 = s.nextInt();
-					n2 = s.nextInt();
-					c = n1 + n2;
-					System.out.println(n1 + " + " + n2 + " = " + c);
-					break;
-					
-				case 'b' :
-					System.out.println("Enter The Numbers : ");
-					n1 = s.nextInt();
-					n2 = s.nextInt();
-					if (n1>n2)
-						c = n1 - n2;
-					else
-						c = n2 - n1;
-					System.out.println(n1 + " - " + n2 + " = " + c);
-					break;
-					
-				case 'c' :
-					System.out.println("Enter The Numbers : ");
-					n1 = s.nextInt();
-					n2 = s.nextInt();
-					c = n1 * n2;
-					System.out.println(n1 + " * " + n2 + " = " + c);
-					break;
-					
-				case 'd' :
-					System.out.println("Enter The Numbers : ");
-					n1 = s.nextInt();
-					n2 = s.nextInt();
-					c = n1 / n2;
-					System.out.println(n1 + " / " + n2 + " = " + c);
-					break;
-				
-				case 'e':
-					System.exit(0);
-					break;
-					
-				default:
-					System.out.println("Inavlid Choice");
-				
-			}
-			System.out.println("Do you Want to Continue\n1. Yes\t2. No ");
-			ans = s.nextInt();
-		}while(ans != 0);
+		int div = 10/5;
+		System.out.println("div = "+ div);
+		int div1 = 10%5;
+		System.out.println("div1 = "+ div1);
 		
+		float a = 0.0f/0.0f;
+		System.out.println("a = "+ a);
+		
+		System.out.println(10/0.0);
+		System.out.println(-10/0.0);
+		
+
 	}
 
 }
